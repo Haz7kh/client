@@ -1,0 +1,68 @@
+.card-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 350px;
+  height: 220px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #191715;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-logo {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-number {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-holder {
+  font-size: 16px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.card-expiry {
+  font-size: 16px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.wifi {
+  display: grid;
+  margin-right: 210px;
+  font-size: 35px;
+}

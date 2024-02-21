@@ -1,0 +1,22 @@
+.wallet-container {
+  position: relative;
+}
+
+.card-container {
+  position: absolute;
+  transition: top 0.3s ease-in-out;
+}
+
+.card-container.active {
+  z-index: 1;
+}
+
+/* Additional styles for the card */
+.card {
+  width: 350px;
+  height: 220px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Other card styles... */

@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh; /* Set a minimum height to ensure that the container expands to the full height of the viewport */
+}
+
+.App {
+  text-align: center;
+  width: 400px;
+  height: 100%;
+  padding: 10px;
+}
+
+h3 {
+  margin-top: 0;
+  color: black;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.add-btn {
+  background-color: none;
+}
