@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Card from "./components/card/Card";
+import data from "../src/data/data";
+
 import Wallet from "./components/wallet/Wallet";
 
 function App() {
@@ -9,7 +10,11 @@ function App() {
     <div className="App">
       <h3>E-WALLET</h3>
       <div className="wallet-container">
-        <Wallet />
+        <Wallet
+          cards={data}
+          activeCardIndex={activeCardIndex}
+          setActiveCardIndex={setActiveCardIndex}
+        />
       </div>
       <button className="add-btn">Add New Card</button>
     </div>

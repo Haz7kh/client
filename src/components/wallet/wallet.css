@@ -1,22 +1,27 @@
 .wallet-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto; /* Add horizontal scrollbar if needed */
+  white-space: nowrap; /* Prevent cards from wrapping */
 }
 
 .card-container {
-  position: absolute;
-  transition: top 0.3s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-container.active {
   z-index: 1;
 }
 
-/* Additional styles for the card */
 .card {
-  width: 350px;
-  height: 220px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
   position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Other card styles... */
+.card.active {
+  transform: scale(1.1);
+}
