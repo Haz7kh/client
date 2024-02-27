@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import data from "../src/data/data";
+import { Link } from "react-router-dom";
 
 import Wallet from "./components/wallet/Wallet";
 
@@ -16,7 +17,9 @@ function App() {
           setActiveCardIndex={setActiveCardIndex}
         />
       </div>
-      <button className="add-btn">Add New Card</button>
+      <Link to="/add-card" className="add-btn">
+        Add New Card
+      </Link>
     </div>
   );
 }

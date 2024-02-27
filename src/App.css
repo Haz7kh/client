@@ -5,12 +5,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh; /* Set a minimum height to ensure that the container expands to the full height of the viewport */
+  min-height: 100vh;
 }
 
 .App {
   text-align: center;
-  width: 100%;
+  width: 400px;
   height: 100%;
   padding: 10px;
 }
